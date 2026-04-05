@@ -7,9 +7,14 @@ class Program
     {
         SayaMusicTrack track1 = new SayaMusicTrack("Sayamusictrack");
 
-        track1.IncreasePlayCount(10);
-        track1.IncreasePlayCount(5);
+        track1.IncreasePlayCount(5000000);
         track1.PrintTrackDetails();
-        Console.ReadLine();
+
+        for (int i = 0; i < 300; i++)
+        {
+            track1.IncreasePlayCount(10000000);
+        }
+
+        track1.PrintTrackDetails();
     }
 }
